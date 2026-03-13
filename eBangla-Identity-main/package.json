@@ -1,0 +1,36 @@
+{
+  "name": "ebangla-identity",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sajid-sarker/eBangla-Identity#readme",
+  "bugs": {
+    "url": "https://github.com/sajid-sarker/eBangla-Identity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajid-sarker/eBangla-Identity.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/src/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.4",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

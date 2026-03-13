@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ─── Brand Token ───────────────────────────────────────── */
+:root {
+  --color-primary: #05339C;
+  --color-primary-light: #3a5fc4;
+  --color-primary-dark: #02206a;
+  --color-white: #ffffff;
+  --color-bg: #ffffff;
+  --color-text-primary: #0d1b3e;
+  --color-text-secondary: #4a5a80;
+
+  font-family: 'Inter', 'Roboto', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Reset ─────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* ─── Links ──────────────────────────────────────────────── */
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--color-primary-light);
+}
+
+/* ─── Buttons ────────────────────────────────────────────── */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+button:hover {
+  background-color: var(--color-primary-light);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+

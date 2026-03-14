@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Import the controller functions
 import { createTaxRecord, getTaxRecords } from "../controllers/taxController.js";
-// Import your authentication middleware (protects the route)
+
 import { protect } from "../middleware/authMiddleware.js";
 
 // Routes
@@ -13,4 +13,4 @@ router.post("/submit", protect, createTaxRecord);
 // GET: http://localhost:5000/api/tax
 router.get("/", protect, getTaxRecords);
 
-export default router; // This line fixes the 'does not provide an export named default' error
+export default router;
